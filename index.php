@@ -19,6 +19,7 @@ include('funciones.php');
 			<th>Apellido</th>
 			<th>Tipo de usuario</th>
 			<th>Acciones</th>
+			<th>Prueba</th>
 		</tr>
 
 		<?php

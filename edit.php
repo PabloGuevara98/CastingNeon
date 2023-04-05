@@ -9,7 +9,7 @@
 		$id = $_POST['id'];
 		$nombre = $_POST['nombre'];
 		$correo = $_POST['correo'];
-		$tipo = $_POST['tipo_usuario'];
+		$tipo = $_POST['tipo'];
 
 		// Actualizar los datos en la base de datos
 		$query = "UPDATE usuarios SET nombre = '$nombre', correo = '$correo', tipo_usuario = '$tipo' WHERE id = $id";
@@ -48,8 +48,8 @@
 		<label for="correo">Correo electrónico:</label>
 		<input type="email" id="correo" name="correo" value="<?php echo $usuario['correo']; ?>" required>
 
-		<label for="tipo_usuario">Tipo de usuario:</label>
-		<select id="tipo_usuario" name="tipo_usuario" required>
+		<label for="tipo">Tipo de usuario:</label>
+		<select id="tipo" name="tipo" required>
 			<option value="">Seleccione el tipo de usuario</option>
 			<option value="j"<?php if(isset($usuario['tipo']) && $usuario["tipo"] == 'j') { echo ' selected'; } ?>>Jurado</option>
 			<option value="p"<?php if(isset($usuario['tipo']) && $usuario["tipo"] == 'p') { echo ' selected'; } ?>>Participante</option>

@@ -18,8 +18,8 @@ include('funciones.php');
 			<th>Nombre</th>
 			<th>Apellido</th>
 			<th>Tipo de usuario</th>
+			<th>ContraseñaTemporal</th>
 			<th>Acciones</th>
-			<th>Prueba</th>
 		</tr>
 
 		<?php
@@ -33,6 +33,8 @@ include('funciones.php');
 			echo "<td>".$fila['nombre']."</td>";
 			echo "<td>".$fila['apellido']."</td>";
 			echo "<td>".get_tipo_usuario($fila['tipo_usuario'])."</td>";
+			echo "<td>".$fila['contrasena']."</td>";
+			
 			echo "<td>";
 			echo "<a href='edit.php?id=".$fila['id']."'>Editar</a> ";
 			echo "<a href='delete.php?id=".$fila['id']."'>Eliminar</a>";

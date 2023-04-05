@@ -42,8 +42,8 @@
 		<label for="correo">Correo electrónico:</label>
 		<input type="email" id="correo" name="correo" required>
 
-		<label for="tipo">Tipo de usuario:</label>
-		<select id="tipo" name="tipo" required>
+		<label for="tipo_usuario">Tipo de usuario:</label>
+		<select id="tipo_usuario" name="tipo_usuario" required>
 			<option value="">Seleccione el tipo de usuario</option>
 			<option value="jurado">Jurado</option>
 			<option value="participante">Participante</option>
